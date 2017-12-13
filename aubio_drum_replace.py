@@ -13,11 +13,6 @@ parser.add_argument('-t', type=float, help='onset detection threshold, default i
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    """
-    if len(sys.argv) < 4:
-        print('usage: %s <inputfile> <outputfile> <sample1> <sample2> ... ' % sys.argv[0])
-        sys.exit(1)
-    """
     win_s = 1024
     hop_s = 256
 
