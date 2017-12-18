@@ -69,7 +69,6 @@ if __name__ == '__main__':
     f[onsets[-1]:onsets[-1]+samples[index].shape[0], :] = samples[index]
 
     print ('output file %s have %d channels' % (args.outfile, channels))
-    f = np.squeeze(f)
     
-    sf.write(args.outfile, f, samplerate)
+    sf.write(args.outfile, np.squeeze(f), samplerate)
         

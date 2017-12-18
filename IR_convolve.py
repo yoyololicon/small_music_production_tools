@@ -4,7 +4,7 @@ import numpy as np
 import soundfile as sf
 from scipy.signal import resample_poly, fftconvolve
 
-parser = argparse.ArgumentParser(description='Impulse response loader.')
+parser = argparse.ArgumentParser(description='Impulse response convolution.')
 parser.add_argument('infile')
 parser.add_argument('outfile')
 parser.add_argument('IR')
